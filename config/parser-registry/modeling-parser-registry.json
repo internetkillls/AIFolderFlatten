@@ -1,0 +1,24 @@
+[
+  {
+    "extension": ".tex",
+    "category": "modeling",
+    "tier": "T3_structural_extract",
+    "parser": "LatexEquationExtractor",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["equation_candidate_extract", "variable_candidate_detect", "unit_pattern_match"],
+    "limitations": ["candidates_only", "no_mathematical_validation", "no_solver"]
+  },
+  {
+    "extension": ".py",
+    "category": "modeling",
+    "tier": "T3_structural_extract",
+    "parser": "PythonModelingLiteParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["equation_string_detect", "numpy_scipy_import_detect", "variable_candidate_detect"],
+    "limitations": ["regex_only", "no_runtime_execution"]
+  }
+]

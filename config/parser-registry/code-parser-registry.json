@@ -1,0 +1,57 @@
+[
+  {
+    "extension": ".cs",
+    "category": "source",
+    "tier": "T3_structural_extract",
+    "parser": "CSharpLiteParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "symbol_extract", "import_extract", "heading_detect"],
+    "limitations": ["regex_or_ast_lite_only", "not_full_compiler_semantics"]
+  },
+  {
+    "extension": ".csproj",
+    "category": "build",
+    "tier": "T3_structural_extract",
+    "parser": "CsprojXmlParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "package_reference_extract", "target_framework_detect"],
+    "limitations": ["xml_parse_only", "no_transitive_resolution"]
+  },
+  {
+    "extension": ".py",
+    "category": "source",
+    "tier": "T3_structural_extract",
+    "parser": "PythonLiteParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "import_extract", "def_detect"],
+    "limitations": ["regex_only", "no_type_inference"]
+  },
+  {
+    "extension": ".js",
+    "category": "source",
+    "tier": "T3_structural_extract",
+    "parser": "JsLiteParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "import_extract", "function_detect"],
+    "limitations": ["regex_only", "no_jsx_ast"]
+  },
+  {
+    "extension": ".ts",
+    "category": "source",
+    "tier": "T3_structural_extract",
+    "parser": "TypeScriptLiteParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "import_extract", "type_detect"],
+    "limitations": ["regex_only", "no_type_checker"]
+  }
+]

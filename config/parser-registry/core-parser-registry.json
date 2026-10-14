@@ -1,0 +1,46 @@
+[
+  {
+    "extension": ".txt",
+    "category": "text",
+    "tier": "T2_text_extract",
+    "parser": "PlainTextReader",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "text_read"],
+    "limitations": ["no_structure_detection", "no_symbol_extract"]
+  },
+  {
+    "extension": ".json",
+    "category": "config",
+    "tier": "T2_text_extract",
+    "parser": "JsonTextReader",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "text_read", "key_detect"],
+    "limitations": ["no_schema_validation", "no_semantic_query"]
+  },
+  {
+    "extension": ".yaml",
+    "category": "config",
+    "tier": "T2_text_extract",
+    "parser": "YamlTextReader",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "text_read"],
+    "limitations": ["no_schema_validation"]
+  },
+  {
+    "extension": ".csv",
+    "category": "data",
+    "tier": "T2_text_extract",
+    "parser": "CsvTextReader",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "text_read", "column_detect"],
+    "limitations": ["no_type_inference", "no_statistics"]
+  }
+]

@@ -1,0 +1,33 @@
+# .NET build directories
+**/bin/
+**/obj/
+
+# Release outputs
+/release/
+/*.zip
+/*.rar
+.env
+.env.*
+!.env.example
+*.pfx
+*.pem
+
+# User-specific configuration
+.ai-flatten.json
+
+# Temporary files and export logs
+*.log
+*_overview.md
+*_debug.md
+*_debug.txt
+*_architecture.md
+*_obsidian.md
+*_research.md
+*_prompt-pack.md
+*_pack/
+
+# IDE files
+.vs/
+.idea/
+*.user
+*.suo

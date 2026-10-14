@@ -1,0 +1,15 @@
+CODEX_PROMPT_REQUIREMENT:
+  every_dlc_must_include:
+    - CODEX_IMPLEMENTATION_PROMPT.md
+    - CODEX_TEST_PROMPT.md
+    - CODEX_REVIEW_PROMPT.md
+    - ACCEPTANCE_CRITERIA.md
+    - STOP_CONDITIONS.md
+
+  rules:
+    - prompt must include exact scope
+    - prompt must include forbidden changes
+    - prompt must include tests to run
+    - prompt must include expected files
+    - prompt must include manifest/provenance requirements
+    - prompt must preserve expert-system-only boundary

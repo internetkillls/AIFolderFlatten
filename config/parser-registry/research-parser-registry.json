@@ -1,0 +1,35 @@
+[
+  {
+    "extension": ".md",
+    "category": "research",
+    "tier": "T3_structural_extract",
+    "parser": "MarkdownLiteParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "heading_extract", "frontmatter_detect", "wikilink_detect", "citation_key_detect"],
+    "limitations": ["no_semantic_analysis", "citation_heuristic_only"]
+  },
+  {
+    "extension": ".bib",
+    "category": "research",
+    "tier": "T3_structural_extract",
+    "parser": "BibTexLiteParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "citation_key_extract", "author_detect", "year_detect"],
+    "limitations": ["regex_only", "no_doi_resolution"]
+  },
+  {
+    "extension": ".ris",
+    "category": "research",
+    "tier": "T1_metadata",
+    "parser": "RisMetadataReader",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "tag_detect"],
+    "limitations": ["field_mapping_heuristic_only"]
+  }
+]

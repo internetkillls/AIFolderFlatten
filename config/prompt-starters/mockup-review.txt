@@ -1,0 +1,10 @@
+---
+
+## TASK: Review This Mockup / Design
+
+The files above represent a work-in-progress mockup or design.
+
+Please:
+1. Identify the single biggest structural or architectural issue
+2. Note anything missing, inconsistent, or that will cause problems later
+3. Suggest what to fix first — be specific, not general

@@ -1,0 +1,10 @@
+---
+
+## TASK: Continue Building This
+
+The files above show the current state of the project.
+
+Please:
+1. Summarize where this is in 2-3 sentences
+2. Identify what is most obviously incomplete or broken
+3. Write the next logical piece of code — pick up exactly where I left off

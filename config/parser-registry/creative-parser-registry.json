@@ -1,0 +1,57 @@
+[
+  {
+    "extension": ".wav",
+    "category": "creative",
+    "tier": "T0_ledger_only",
+    "parser": "AudioLedgerOnly",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["hash", "size_bytes", "path_record"],
+    "limitations": ["no_audio_analysis", "no_duration", "no_bpm", "no_perceptual_claims", "external_ffprobe_needed_for_metadata"]
+  },
+  {
+    "extension": ".mp3",
+    "category": "creative",
+    "tier": "T0_ledger_only",
+    "parser": "AudioLedgerOnly",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["hash", "size_bytes", "path_record"],
+    "limitations": ["no_audio_analysis", "no_duration", "no_bpm", "no_perceptual_claims"]
+  },
+  {
+    "extension": ".mp4",
+    "category": "creative",
+    "tier": "T0_ledger_only",
+    "parser": "VideoLedgerOnly",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["hash", "size_bytes", "path_record"],
+    "limitations": ["no_frame_analysis", "no_motion_detection", "no_perceptual_claims", "external_ffprobe_needed"]
+  },
+  {
+    "extension": ".png",
+    "category": "creative",
+    "tier": "T0_ledger_only",
+    "parser": "ImageLedgerOnly",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["hash", "size_bytes", "path_record"],
+    "limitations": ["no_image_analysis", "no_color_extraction", "no_perceptual_claims"]
+  },
+  {
+    "extension": ".blend",
+    "category": "creative",
+    "tier": "T0_ledger_only",
+    "parser": "BlendLedgerOnly",
+    "requiresExternalTool": true,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["hash", "size_bytes", "path_record"],
+    "limitations": ["binary_format", "blender_python_needed_for_extraction"]
+  }
+]

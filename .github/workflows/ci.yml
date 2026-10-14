@@ -1,0 +1,17 @@
+name: Validate
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: dotnet test tests/AIFolderFlatten.Tests/AIFolderFlatten.Tests.csproj --configuration Release
+      - run: node scripts/smoke-cockpit-ui.js

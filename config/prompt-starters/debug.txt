@@ -1,0 +1,13 @@
+---
+
+## TASK: Debug This Issue
+
+**Problem:** [DESCRIBE THE BUG OR ERROR HERE]
+**Expected behavior:** [WHAT SHOULD HAPPEN]
+**Actual behavior:** [WHAT ACTUALLY HAPPENS]
+**Error message (if any):** [PASTE ERROR / STACK TRACE HERE]
+
+Please:
+1. Identify the root cause from the files above
+2. Point to the exact file and line number
+3. Propose a minimal fix — do not refactor unrelated code

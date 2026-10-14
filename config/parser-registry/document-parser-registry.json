@@ -1,0 +1,46 @@
+[
+  {
+    "extension": ".html",
+    "category": "document",
+    "tier": "T2_text_extract",
+    "parser": "HtmlDocumentParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "title_extract", "heading_detect", "link_detect"],
+    "limitations": ["no_js_execution", "no_css_rendering"]
+  },
+  {
+    "extension": ".pdf",
+    "category": "document",
+    "tier": "T1_metadata",
+    "parser": "PdfMetadataAdapter",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["hash", "size_bytes", "header_sniff"],
+    "limitations": ["no_text_extraction_without_external_tool", "metadata_only"]
+  },
+  {
+    "extension": ".epub",
+    "category": "document",
+    "tier": "T1_metadata",
+    "parser": "EpubMetadataAdapter",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["hash", "size_bytes", "opf_metadata_extract", "title_extract", "author_extract"],
+    "limitations": ["no_full_text_extraction", "metadata_only"]
+  },
+  {
+    "extension": ".tex",
+    "category": "document",
+    "tier": "T3_structural_extract",
+    "parser": "LatexLiteParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "section_detect", "equation_candidate_detect", "citation_key_detect"],
+    "limitations": ["regex_only", "no_latex_compiler"]
+  }
+]

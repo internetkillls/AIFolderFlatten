@@ -1,0 +1,62 @@
+[
+  {
+    "tool": "tree-sitter",
+    "kind": "parser",
+    "required": false,
+    "requiresAI": false,
+    "requiresNetwork": false,
+    "probeCommand": "tree-sitter --version",
+    "fallback": "internal_regex_parser",
+    "statusOutput": "TOOLCHAIN_STATUS.md"
+  },
+  {
+    "tool": "ast-grep",
+    "kind": "parser",
+    "required": false,
+    "requiresAI": false,
+    "requiresNetwork": false,
+    "probeCommand": "ast-grep --version",
+    "fallback": "internal_regex_parser",
+    "statusOutput": "TOOLCHAIN_STATUS.md"
+  },
+  {
+    "tool": "dependency-cruiser",
+    "kind": "dependency_analyzer",
+    "required": false,
+    "requiresAI": false,
+    "requiresNetwork": false,
+    "probeCommand": "depcruise --version",
+    "fallback": "internal_import_regex",
+    "statusOutput": "TOOLCHAIN_STATUS.md"
+  },
+  {
+    "tool": "madge",
+    "kind": "dependency_analyzer",
+    "required": false,
+    "requiresAI": false,
+    "requiresNetwork": false,
+    "probeCommand": "madge --version",
+    "fallback": "internal_import_regex",
+    "statusOutput": "TOOLCHAIN_STATUS.md"
+  },
+  {
+    "tool": "ffprobe",
+    "kind": "media_analyzer",
+    "required": false,
+    "requiresAI": false,
+    "requiresNetwork": false,
+    "probeCommand": "ffprobe -version",
+    "fallback": "ledger_only_no_media_analysis",
+    "statusOutput": "TOOLCHAIN_STATUS.md"
+  },
+  {
+    "tool": "git",
+    "kind": "vcs",
+    "required": false,
+    "requiresAI": false,
+    "requiresNetwork": false,
+    "probeCommand": "git --version",
+    "fallback": "no_git_context",
+    "statusOutput": "TOOLCHAIN_STATUS.md"
+  }
+]

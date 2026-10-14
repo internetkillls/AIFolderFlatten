@@ -1,0 +1,8 @@
+---
+
+## TASK: Explain This Codebase
+
+Please explain this project to me as if I am new to it:
+1. What does it do? (1-2 sentences, no jargon)
+2. Walk me through the entry point and the main execution flow
+3. Highlight anything non-obvious, clever, or that I should not touch without understanding first

@@ -1,0 +1,9 @@
+---
+
+## About This Document
+
+This document was automatically compiled from a project folder using AIFolderFlatten.
+It contains the project structure, file summaries, and full source text for use as a NotebookLM source.
+
+Upload this file as a source in NotebookLM, then ask questions about the project.
+NotebookLM will cite specific sections when answering, reducing hallucination.

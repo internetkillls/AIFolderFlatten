@@ -1,0 +1,35 @@
+[
+  {
+    "extension": ".csproj",
+    "category": "dev",
+    "tier": "T3_structural_extract",
+    "parser": "DotNetProjectParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["package_reference_extract", "target_framework_detect", "output_type_detect", "project_reference_extract"],
+    "limitations": ["xml_parse_only", "no_transitive_resolution", "no_restore_execution"]
+  },
+  {
+    "extension": ".json",
+    "category": "dev",
+    "tier": "T3_structural_extract",
+    "parser": "PackageJsonParser",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["dependency_extract", "script_detect", "version_detect"],
+    "limitations": ["json_parse_only", "no_install_execution", "no_vulnerability_scan"]
+  },
+  {
+    "extension": ".toml",
+    "category": "dev",
+    "tier": "T2_text_extract",
+    "parser": "TomlTextReader",
+    "requiresExternalTool": false,
+    "requiresAI": false,
+    "networkRequired": false,
+    "capabilities": ["line_count", "hash", "text_read", "dependency_pattern_detect"],
+    "limitations": ["regex_only", "no_toml_semantic_parser"]
+  }
+]
