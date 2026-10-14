@@ -9,6 +9,7 @@
     <RootNamespace>AIFolderFlatten</RootNamespace>
     <Version>0.3.1-preview</Version>
     <Authors>AIFolderFlatten contributors</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Description>AI Seeder — local-first expert-system-only context compiler. Zero AI runtime dependency. Deterministic evidence pack generation for folders, code, Obsidian, research, and creative workspaces.</Description>
   </PropertyGroup>
 

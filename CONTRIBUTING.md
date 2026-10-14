@@ -10,5 +10,4 @@ local-only execution boundary intact. Changes to coverage must report exclusions
 and preserve integrity verification.
 
 Include the problem, resulting behavior and validation in each pull request.
-No project-wide open-source license has been selected yet; public visibility alone
-does not grant an open-source license.
+Contributions are provided under the project's [MIT License](LICENSE).

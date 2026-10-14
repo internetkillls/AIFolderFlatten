@@ -82,5 +82,4 @@ are loaded into memory before chunking. See [Security](docs/SECURITY.md) and the
 
 ## License
 
-No open-source license has been selected. Public availability does not grant an
-open-source license.
+Licensed under the [MIT License](LICENSE).
